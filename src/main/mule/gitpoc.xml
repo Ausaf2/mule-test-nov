@@ -20,6 +20,7 @@ output application/json
 "hello this is shaique"]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="7c411e6d-3af9-4776-8ca3-9b6253599011" />
 	</flow>
 	<flow name="gitpocFlow" doc:id="81aca2da-d3cd-4979-bb82-d0e4cd01bc96" >
 		<http:listener doc:name="Listener" doc:id="d22e4f12-feca-4bae-9646-6c06149134ae" config-ref="HTTP_Listener_config" path="test"/>
@@ -36,5 +37,6 @@ output application/json
 		<logger level="INFO" doc:name="Logger" doc:id="acf4f0cd-2ecc-425d-bbf6-bdef2aaca831" />
 		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="3d60b1d1-d91e-4f09-a670-5bc1d89f05f4" />
 		<logger level="INFO" doc:name="Logger" doc:id="dd9647ee-0690-437c-accd-173817074731" />
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="c7403a75-dfa1-4397-a56b-7fde4bb5a5c6" />
 	</flow>
 </mule>
