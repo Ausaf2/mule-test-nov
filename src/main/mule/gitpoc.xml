@@ -27,5 +27,6 @@ output application/json
 		<logger level="INFO" doc:name="Logger" doc:id="a65e1ee2-fcb0-463b-9059-5367e2a71018" />
 		<logger level="INFO" doc:name="Logger" doc:id="acf4f0cd-2ecc-425d-bbf6-bdef2aaca831" />
 		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="3d60b1d1-d91e-4f09-a670-5bc1d89f05f4" />
+		<logger level="INFO" doc:name="Logger" doc:id="dd9647ee-0690-437c-accd-173817074731" />
 	</flow>
 </mule>
