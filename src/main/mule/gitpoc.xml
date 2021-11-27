@@ -12,6 +12,14 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 		<logger level="INFO" doc:name="Logger" doc:id="7c5850eb-ab98-4425-91d6-88b7259b6a5b" />
 		<logger level="INFO" doc:name="Logger" doc:id="1de3d039-faf6-42cf-aabb-24fa566894e7" />
 		<logger level="INFO" doc:name="Logger" doc:id="90774647-9999-4ba0-a825-df7439588af4" />
+		<ee:transform doc:name="Transform Message" doc:id="19f2ccab-e913-4577-8506-f34f07833d2a" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+"hello this is shaique"]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
 	</flow>
 	<flow name="gitpocFlow" doc:id="81aca2da-d3cd-4979-bb82-d0e4cd01bc96" >
 		<http:listener doc:name="Listener" doc:id="d22e4f12-feca-4bae-9646-6c06149134ae" config-ref="HTTP_Listener_config" path="test"/>
